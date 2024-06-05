@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProductList from "../components/product/ProductList.svelte";
+---
+
+<Layout title="Products">
+  <div>
+    <div class="flex justify-center p-4">
+      <div class="w-3/4">
+        <ProductList client:only="svelte" />
+      </div>
+    </div>
+  </div>
+</Layout>
